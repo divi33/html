@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+.grid-container{         
+                 display:grid;
+                 grid-template-rows:0.5fr 3fr 2fr 1fr;
+                 grid-template-columns:1fr 1fr 1fr 1fr;
+                 grid-gap:10px;
+                 grid-template-areas:"item1 item1 item1 item1"
+                                     "item2 item3 item3 item3"
+                                     "item2 item4 item5 item6"
+                                     "item2 item7 item7 item7";
+                text-align:center;
+                font-size:20;
+               }
+.item1{
+                 background-color:#8FBC8F;
+                 grid-area:item1;
+               
+              }
+.item2{
+                 background-color:#008B8B;
+                 grid-area:item2;
+                 height:610px;
+               }
+.item3{
+                 background-color:#FFE4C4;
+                 grid-area:item3;
+               }
+.item4{
+                 background-color:#E9967A;
+                 grid-area:item4;
+               }
+.item5{
+                 background-color:#FFE4E1;
+                 grid-area:item5;
+               }
+.item6{
+                 background-color:#FF69B4;
+                 grid-area:item6;
+               }
+.item7{
+                 background-color:#66CDAA;
+                 grid-area:item7;
+               }
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="item1">Nav</div>
+<div class="item2">Siderbar</div>
+<div class="item3">Main</div>
+<div class="item4">Content1</div>
+<div class="item5">Content2</div>
+<div class="item6">Content3</div>
+<div class="item7">Footer</div>
+</div>
+</body>
+</html>
